@@ -1,10 +1,12 @@
 const http = require('http')
 const fs = require('fs')
+var url = require('url')
 const port = 3000
 
 const server = http.createServer(function(req,res) {
+    var q = url.parse(req.url, true);
     res.writeHead(200, { 'Content-Type': 'text/html'})
-    if(req.url === '/home' ){
+    if(q.path === '/home' || q.path === '/'){
         fs.readFile('frontend/index.html', function(error, data){
             if(error){
                 res.writeHead(404)
@@ -14,7 +16,7 @@ const server = http.createServer(function(req,res) {
             }
             res.end()
         })
-    } if(req.url === '/about'){
+    } if(q.path === '/about'){
         fs.readFile('frontend/about.html', function(error, data){
             if(error){
                 res.writeHead(404)
@@ -25,7 +27,7 @@ const server = http.createServer(function(req,res) {
             res.end()
         })
     } 
-    if(req.url === '/questions'){
+    if(q.path === '/questions'){
         fs.readFile('frontend/questions.html', function(error, data){
             if(error){
                 res.writeHead(404)
