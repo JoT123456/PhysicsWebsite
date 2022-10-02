@@ -22,16 +22,16 @@ var questionsElement = document.getElementById('questions')
 for (var i = 0; i<questionList.length; i++){
     question = questionList[i]
     questionsElement.innerHTML += `
-    <div class = ${question.answer}>
+    <div class = '${question.question} border border-dark rounded p-2 my-3'>
         <h5 id = "Qn ${i+1}">Qn ${i+1}</h5>
         <p>${question.question}</p>
-        <form action="">
+        <form action="" class = 'container'>
             <input type="radio" id = "Q${i+1}A" name = "Question${i+1}" value = "a"><label for="Q${i+1}A">${question.options.a}</label><br>
             <input type="radio" id = "Q${i+1}B" name = "Question${i+1}" value = "b"><label for="Q${i+1}B">${question.options.b}</label><br>
             <input type="radio" id = "Q${i+1}C" name = "Question${i+1}" value = "c"><label for="Q${i+1}C">${question.options.c}</label><br>
             <input type="radio" id = "Q${i+1}D" name = "Question${i+1}" value = "d"><label for="Q${i+1}D">${question.options.d}</label><br>
         </form>
-        <button class = 'submitbtn'>Submit</button>
+        <button class = 'submitbtn btn btn-primary btn-sm'>Submit</button>
         <div class = 'completiontext'></div>
     </div>
     `
