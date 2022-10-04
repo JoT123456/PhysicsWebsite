@@ -15,7 +15,7 @@
 
     <title>Document</title>
 </head>
-<body class = 'container p-3 mb-2 bg-secondary text-white'>
+<body class = 'container p-3 mb-2 bg-dark text-white'>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Navbar</a>
@@ -24,16 +24,16 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="index.html">Learning Quantum Tunneling <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="questions.html">Questions</a>
-                <a class="nav-item nav-link" href="about.html">About Us</a>
+                <a class="nav-item nav-link active border-right" href="index.html">Learning Quantum Tunneling <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link border-right" href="questions.html">Questions</a>
+                <a class="nav-item nav-link border-right" href="about.html">About Us</a>
               </div>
             </div>
           </nav>
         <hr>
         <h1>Quantum tunneling</h1>
     </header>
-    <section class = 'container'>
+    <section>
         <h2>Contents</h2>
         <ul>
             <li>Nuclear fusion</li>
@@ -44,56 +44,66 @@
             <li>Electron Tunneling</li>
         </ul>
     </section>
-    <section class = 'container'>
+    <section>
         <h3>Nuclear fusion</h3>
         <p>Nuclear Fusion is the reaction in which 2 or more atomic nuclei are combined to form another different atomic nuclei and sub atomic particles (neutrons or protons).</p>
-        <img class="img-fluid" src="../images/bindingEnergyPerNucleon.gif" alt="You didn't load the assets, sad" srcset="">
-        <p>
-        Nuclear fusion can occur in elements below Fe-56. From the graph below on can notice that the average binding energy per nucleon is increasing until Fe-56, this means that any reaction that causes molecules lighter molecules to fuse towards Fe-56 would be more stable. The energy released in these converted from the mass defect (\(\delta m\)).</p>
-        
-        <p>
-            Where: 
-            \[\delta m = \frac{E}{mc^2}.\]
-        </p>
-
-        <img src="" alt="">
-        
+        <div class = 'row'>
+            <img class="img-fluid col-sm-6" src="../images/bindingEnergyPerNucleon.gif" alt="You didn't load the assets, sad" srcset="">
+            <div class = col-sm-6>
+                <p>
+                Nuclear fusion can occur in elements below Fe-56. From the graph below on can notice that the average binding energy per nucleon is increasing until Fe-56, this means that any reaction that causes molecules lighter molecules to fuse towards Fe-56 would be more stable. The energy released in these converted from the mass defect (\(\delta m\)).</p>
+                <p>
+                    Where: 
+                    \[\delta m = \frac{E}{mc^2}.\]
+                </p>
+            </div>
+        </div>
     </section>
 
-    <section class = 'container'>
+    <section>
         <h3>Energy Barriers</h3>
         <p>
             An energy barrier is the minimum amount of energy required to cause the reaction. Every reaction like physical or chemical, has an energy barrier. An example of a chemical energy barrier would be the combustion reaction of propane. An example of a physical energy barrier would be hitting a egg hard enough to break it.
         </p>
-        <img src="../images/reactionEnergyGraph.jpg" alt="" class="img-fluid">
+        <img src="../images/reactionEnergyGraph.jpg" alt="" class="img-fluid p-b">
         <p>The above graph is a energy digram of a reaction and it is commonly used to represent chemical reactions. a) represents a exothermic reaction while b) represents an endothermic reaction. \(E_a\) represents the activation energy which is analogous to the energy barrier. Nuclear Fusion reactions are considered exothermic reactions as they release energy.</p>
+        
         <h4>Coloumb Forces</h4>
-        <img src="../images/electric-charges.png" alt="" class="img-fluid">
-        <p>In Nuclear Fusion, the energy barrier is represented by Coloumb Forces. They are the electrostatic forces of repulsion found between the 2 positively charged nuclei. Naturally 2 negatively charged nuclei would repel and as such be as far apart from each other as possible. Energy must be input into the system to bring the like charges together.</p>
-        <p>
-            The Coloumb forces and the potential energy can be modelled by the following equations: 
-            \[F = \frac{k q_1 q_2}{r^2}\]
-            \[U = -\frac{k q_1 q_2}{r}\]
-        </p>
+           <div class="row">    
+            <img src="../images/electric-charges.png" alt="" class="img-fluid col-sm-6">
+            <p class ='img-fluid col-sm-6'>In Nuclear Fusion, the energy barrier is represented by Coloumb Forces. They are the electrostatic forces of repulsion found between the 2 positively charged nuclei. Naturally 2 negatively charged nuclei would repel and as such be as far apart from each other as possible. Energy must be input into the system to bring the like charges together.</p>
+            <p>
+                The Coloumb forces and the potential energy can be modelled by the following equations: 
+                \[F = \frac{k q_1 q_2}{r^2}\]
+                \[U = -\frac{k q_1 q_2}{r}\]
+            </p>
+        </div>
+        
         <h4>Strong Forces</h4>
-        <p>It is impossible for larger nuclei to form if there is only a repulsive Coloumbs Force. There is another force at play in Nuclear Fusion. It is the Strong Nuclear Force. As the name implies the strong nuclear force is a strong (literally) force that occurs in the nucleus of atoms. This force is short ranges, meaning it has a large magnitude at close distances but its magnitude falls of extremely quickly, faster than the Coloumbs Force.</p>
-        <img src="../images/Internuclear distance graph.jpg" alt="" class="img-fluid">
-        <p>
+        <div class = 'row mb-3'>
+            <p class = 'col-sm-5'>It is impossible for larger nuclei to form if there is only a repulsive Coloumbs Force. There is another force at play in Nuclear Fusion. It is the Strong Nuclear Force. As the name implies the strong nuclear force is a strong (literally) force that occurs in the nucleus of atoms. This force is short ranges, meaning it has a large magnitude at close distances but its magnitude falls of extremely quickly, faster than the Coloumbs Force.
             The overall force equation would be as follows:
-            \[F_{net} = -F_{coloumbs} + F_{strong}\]
-            Where there would be an attractive force when \(F_{net}\) is positive, and a repulsive force when \(F_{net}\) is negative.
+                \[F_{net} = -F_{coloumbs} + F_{strong}\]
+            </p>
+            <img src="../images/Internuclear distance graph.jpg" alt="" class="img-fluid col-sm-7">
+            
+        </div>
+            
+            <p>
+                Where there would be an attractive force when \(F_{net}\) is positive, and a repulsive force when \(F_{net}\) is negative.
 
-            Notice that after overcoming the repulsive Coloumb Forces at a long range (Energy Barrier), at a sufficiently close range between the nuclei, the magnitude Strong Force would be larger than that of the Coloumbs Force. This results in a attractive force between nuclei, resulting in fusion.
-        </p>
+                Notice that after overcoming the repulsive Coloumb Forces at a long range (Energy Barrier), at a sufficiently close range between the nuclei, the magnitude Strong Force would be larger than that of the Coloumbs Force. This results in a attractive force between nuclei, resulting in fusion.
+            </p>
+        
 
     </section>
-    <section class = 'container'>
+    <section>
         <h3>On the Earth</h3>
  
         <h4>Temperature to Kinetic Energy</h4>
         <p>As you have probably learnt before, temperature is proportional to kinetic energy. The faster the particles in a material vibrate (ergo. more KE), the higher its temperature. It is important to note that there is a distinction between the 2. Kinetic energy is a properity of every single atom while Temperature is a collective property. (There can be no temperature to a single atom)</p>
         <p> A temperature is indicative of the average vibrational speed. Every paricle in an object does not vibrate at that same speed due to random nudges and bumps causing some of the particles to be faster while others would be slower.</p>
-        <img src="../images/velocityDistricutionOfGas.jpg" alt="" class="img-fluid">
+        <img src="../images/velocityDistricutionOfGas.jpg " alt="" class="img-fluid">
         
         <p>
         Above is a graph showing the distrubtion of the particle velocities at different temperatures. Notice that as the temperature increases, the curve flattens and shifts to the left. This means that at high temperatures, a higher proportion of the particles are moving at higher speeds. The proportion of particles that have Kinetic Energy larger than \( E_a \) would be able to undergo the fusion reaction. </p>
@@ -111,7 +121,7 @@
     <section>
         <h3>In the Sun</h3>
         <p>Stars are formed by large clouds of interstellar gas coalescing into a giant ball of plasma. This ball of gas must be massive enough for it to pull itself into a sphere shape and compress the gases until Nuclear fusion can occur</p>
-        <img src="../images/Sun imAGE.jpg" alt="" class="img-fluid">
+        <img src="../images/Sun imAGE.jpg" alt="" class="img-fluid ">
         <p>Did you know, The sun is a star. Yes it is a star that has a shocking mass of 1 solar mass (I wonder why). It is a yellow star in the main sequence. The Sun's radius is about 695,000 kilometers, or 109 times that of Earth. Its mass is about 330,000 times that of Earth, comprising about 99.86% of the total mass of the Solar System.Roughly three-quarters of the Sun's mass consists of hydrogen (~73%); the rest is mostly helium (~25%), with much smaller quantities of heavier elements, including oxygen, carbon, neon, and iron.</p>
         <h4>Proton Proton Chain</h4>
         <img src="../images/PPChain.webp" alt="" class="img-fluid">
@@ -153,10 +163,10 @@
             
             In Born's statistical interpretation in non-relativistic quantum mechanics,[8][9][10] the squared modulus of the wave function, |ψ|2, is a real number interpreted as the probability density of measuring a particle as being at a given place – or having a given momentum – at a given time, and possibly having definite values for discrete degrees of freedom. The integral of this quantity, over all the system's degrees of freedom, must be 1 in accordance with the probability interpretation. This general requirement that a wave function must satisfy is called the normalization condition. Since the wave function is complex-valued, only its relative phase and relative magnitude can be measured—its value does not, in isolation, tell anything about the magnitudes or directions of measurable observables; one has to apply quantum operators, whose eigenvalues correspond to sets of possible results of measurements, to the wave function ψ and calculate the statistical distributions for measurable quantities. </p>
     </section>
-    <section class = 'container'>
+    <section class>
         <h3>Quantum Tunneling</h3>
         <p>
-            uantum tunnelling, also known as tunneling (US) is a quantum mechanical phenomenon whereby a wavefunction can propagate through a potential barrier.
+            Quantum tunnelling, also known as tunneling (US) is a quantum mechanical phenomenon whereby a wavefunction can propagate through a potential barrier.
  
             The transmission through the barrier can be finite and depends exponentially on the barrier height and barrier width. The wavefunction may disappear on one side and reappear on the other side. The wavefunction and its first derivative are continuous. In steady-state, the probability flux in the forward direction is spatially uniform. No particle or wave is lost. Tunneling occurs with barriers of thickness around 1–3 nm and smaller.[1]   
         </p>
@@ -165,5 +175,13 @@
         </p>
         hough this probability is still low, the extremely large number of nuclei in the core of a star is sufficient to sustain a steady fusion reaction.
     </section>
+
+    <footer>
+        <div class="container bg-light text-black-50">
+            <p>This is the end of the website</p>
+            <p> <a href = ''>Turn back</a> or face the consequences</p>
+        </div>
+    </footer>
+
 </body>
 </html>
