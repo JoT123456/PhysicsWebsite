@@ -22,7 +22,7 @@ var questionsElement = document.getElementById('questions')
 for (var i = 0; i<questionList.length; i++){
     question = questionList[i]
     questionsElement.innerHTML += `
-    <div class = '${question.question} border border-dark rounded p-2 my-3'>
+    <div class = '${question.question} border border-white rounded p-2 my-3'>
         <h5 id = "Qn ${i+1}">Qn ${i+1}</h5>
         <p>${question.question}</p>
         <form action="" class = 'container'>
