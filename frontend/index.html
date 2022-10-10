@@ -77,7 +77,7 @@
             <p>
                 The Coloumb forces and the potential energy can be modelled by the following equations: 
                 \[F = \frac{k q_1 q_2}{r^2}\]
-                \[U = \int\limits_{r}^{\infty}\frac{k q_1 q_2}{r^2} dr = -\frac{k q_1 q_2}{r}\]
+                \[U = \int\limits_{r}^{\infty}\frac{k q_1 q_2}{r^2} dr = \frac{k q_1 q_2}{r}\]
             </p>
         </div>
         
@@ -194,14 +194,53 @@
     </section>
     <section class>
         <h3>Quantum Tunneling</h3>
-        <p>
-            Quantum tunnelling, also known as tunneling (US) is a quantum mechanical phenomenon whereby a wavefunction can propagate through a potential barrier.
- 
-            The transmission through the barrier can be finite and depends exponentially on the barrier height and barrier width. The wavefunction may disappear on one side and reappear on the other side. The wavefunction and its first derivative are continuous. In steady-state, the probability flux in the forward direction is spatially uniform. No particle or wave is lost. Tunneling occurs with barriers of thickness around 1–3 nm and smaller.[1]   
-        </p>
-        <p>
+        <div class='row'>
+            <p class="col-sm-8">
+            Imagine you are rolling a ball up a hill by giving it an initial shove. 
+            According to classical physics and common sense, if the ball's initial kinetic energy is less than the gain in gravitational potential energy in going up the hill then the ball rolls back down.
+            Quantum physics says on the other hand, that a fraction of the ball will roll up the hill and the remaining portion will roll back down (maybe with a little stuck inside the hill).
+            </p>
+            <img src="../images/ball rolling classical.png" class="col-sm-4">
+        </div>
 
+        <div class='row'>
+        <p class="col-sm-8">
+            Quantum tunnelling is the phenomenon where particles have a nonzero chance of travelling through a potential barrier even if it has insufficient energy to overcome the barrier.
+            This process results from two important principles in quantum physics: Wave-Particle Duality and Heisenberg's Uncertainty Principle.
+            Let's try to understand quantum tunneling through a mathematical derivation!
         </p>
+        <img src="../images/ball rolling quantum.png" class="col-sm-4">
+        </div>
+        <p>
+            As mentioned in the above section, all particles have an associated wavefunction. 
+            Wave functions evolve over time according to the Schrödinger Wave Equation.
+            For simplicity’s sake we only consider the one-dimensional case of quantum tunnelling.
+            In solving for the equation of the wave equation, we only need to consider the solution that obeys the time-independent Schrödinger wave equation:
+            \[-\frac{\hbar^2}{2m}\frac{\partial^2 \psi(x)}{\partial x^2} + V(x)\psi(x) = E\psi(x)\]
+        </p>
+        <div class = 'row'>
+            <p class="col-sm-7">
+                E represents the kinetic energy of the particle here.
+                We first want to sort out the potential function, \(V(x)\).
+                We let the potential barrier have length L and potential V greater than the kinetic energy of the particle, or V>E.
+                Once again we want to mention V>E as it is very important.
+                We divide space into 3 regions:
+                \[ V(x)=
+                \begin{cases}
+                Region\;1: 0 & x < 0 \\
+                Region\;2: V & 0 \leq x \leq L \\
+                Region\;3: 0 & x \geq L
+                \end{cases}
+                \]
+            </p>
+            <img src="../images/potential barrier.png" class="col-sm-5">
+        </div>
+        <p>
+            Rearranging the time-independent Schrödinger wave equation, we get:
+            \[\frac{\partial^2 \psi(x)}{\partial x^2} = \frac{2m}{\hbar^2}(V-E)\psi(x)\]
+        </p>
+
+
         Though this probability is still low, the extremely large number of nuclei in the core of a star is sufficient to sustain a steady fusion reaction.
     </section>
 
